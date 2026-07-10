@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cfloat>
 
 using namespace std;
 
@@ -8,8 +9,6 @@ public:
     // O(m + n + log(m) + log(n))
     void merge(vector<int>& arr, vector<int>& l, vector<int>& r){
         int left = 0, right = arr.size() - 1;
-
-        int mid = left + (right - left) / 2;
 
         int i = 0, j = 0;
         int k = left;
